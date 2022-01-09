@@ -4,6 +4,7 @@
 \usepackage{hyperref}
 \usepackage{indentfirst}
 \usepackage{amsmath}
+\usepackage{titlesec}
 
 
 \begin{document}
@@ -13,6 +14,18 @@
 	\date{}
 	\maketitle
 	
+
+	\titleformat{\chapter}[display]
+	{\Huge\bfseries}
+	{}
+	{0pt}
+	{\thechapter.\ }
+
+	\titleformat{name=\chapter,numberless}[display]
+	{\Huge\bfseries}
+	{}
+	{0pt}
+	{}
 	
 	\chapter{Development of detumbling prototype for a 1U CubeSat}
 	
@@ -59,8 +72,9 @@
 	$$\left(\frac{d^2X}{dt^2},\frac{d^2Y}{dt^2},\frac{d^2Z}{dt^2}\right)_{t_i} = -\left(\frac{GM}{r^2}\right)\hat{r}$$\\
 	$$\left(\frac{dQ_0}{dt},\frac{dQ_1}{dt},\frac{dQ_2}{dt},\frac{dQ_3}{dt}\right)_{t_i} = \omega_{t_{i-1}}$$
 	\hspace{35pt} (Obtained from Euler angles to quarternions conversion ``ref2eqn")\\\\
+	\pagebreak
 	$$\left(\frac{d^2\omega}{dt^2}\right) = I^{-1}(T_m)$$
-	\hspace{100pt} (From rotational inertial equation ``ref2eqn")\\\\
+	\hspace{100pt} (From rotational inertial equation ``ref2eqn")\\
 	
 	Here the torque from magnetorquers $T_m$ is computed from B-dot control algorithm.The algorithm takes in the current angular velocity of the CubeSat and the magnetic field around the satellite to determine the required magnetic moment that is to be produced by the Magnetorquer, inorder to achieve efficient detumbling. The B-dot algorithm states that the magnetic moment that is to be produced should be mututally perpendcular to the angular velocity vector ($\vec{\omega}$) and the Earth's magnetic field ($\vec{B}$).\\
 	$$\vec{\mu} = k.\left(\vec{B}\times\vec{\omega}\right)$$\\
