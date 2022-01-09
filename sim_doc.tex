@@ -5,6 +5,7 @@
 \usepackage{indentfirst}
 \usepackage{amsmath}
 \usepackage{titlesec}
+\usepackage{graphicx}
 
 
 \begin{document}
@@ -76,12 +77,16 @@
 	$$\left(\frac{d^2\omega}{dt^2}\right) = I^{-1}(T_m)$$
 	\hspace{100pt} (From rotational inertial equation ``ref2eqn")\\
 	
-	Here the torque from magnetorquers $T_m$ is computed from B-dot control algorithm.The algorithm takes in the current angular velocity of the CubeSat and the magnetic field around the satellite to determine the required magnetic moment that is to be produced by the Magnetorquer, inorder to achieve efficient detumbling. The B-dot algorithm states that the magnetic moment that is to be produced should be mututally perpendcular to the angular velocity vector ($\vec{\omega}$) and the Earth's magnetic field ($\vec{B}$).\\
-	$$\vec{\mu} = k.\left(\vec{B}\times\vec{\omega}\right)$$\\
-	Here the control variable $k$ can be adjusted as per the mission's requirements to fine tune the rate of detumbling. In our case $k$ is adjusted to generate magnetic moments between $0.2\text{ to }0.2Am^2$. In the script, the IGRF model is used to obtain the magnetic field at current location. The torque produced is given by, $$\vec{T_m} = \vec{\mu}\times\vec{B}$$
+	Here the torque from magnetorquers $T_m$ is computed from B-dot control algorithm.The algorithm takes in the current angular velocity of the CubeSat and the magnetic field around the satellite to determine the required magnetic moment that is to be produced by the Magnetorquer, inorder to achieve efficient detumbling. The B-dot algorithm states that the magnetic moment that is to be produced should be mututally perpendcular to the angular velocity vector ($\vec{\omega}$) and the Earth's magnetic field ($\vec{B}$). To emulate real world noissy sensors, a random noise generation is also hard coded in the script. This gives magnetic field (magnetometer sensor) with an error of few microteslas as well as angular velocity (gyro-error)  with an error of few milli radians. This gave us the opportunity to implement a filtering algorithm which minimises the error. A single order Kalman filter is employed - combining the current sensor data and previous sensor value, thereby smoothening any steep variations in the measured value. This corrected data is fed to the B-dot algorithm.
+	$$\vec{\mu} = k.\left(\vec{B}\times\vec{\omega}\right)$$
+	Here the control variable $k$ can be adjusted as per the mission's requirements to fine tune the rate of detumbling. In our case $k$ is adjusted to generate magnetic moments between $0.2\text{ to }0.2Am^2$. In the script, the IGRF model is used to obtain the magnetic field at current location. The torque produced, in the magnetometer is given by, 	
+	$$\vec{T_m} = \vec{\mu}\times\vec{B}$$
+	Each consecutive states are stored in each iteration of timestep. For post processing, the numerical values are exported as excel and for visualisation, plotted in a graph. From these results, the duration for detumbling from $\vec{\omega}=10\hat{i}+10\hat{j}+10\hat{k}$ (in degrees) to $\vec{\omega}=0.01\hat{i}+0.013\hat{j}+0.01\hat{k}$ was found to be 106.7667 mins (1.132 orbits). Plot between Angular velocity of the CubeSat, Current in each magnetorquers and Torque produced from each torquers V/S time in seconds is given below. 
+	\pagebreak
 	
-	Each consecutive states are stored in each iteration of timestep. For post processing, the numerical values are exported as excel and for visualisation, plotted in a graph. From these results, the duration for detumbling from $\vec{\omega}=10\hat{i}+10\hat{j}+10\hat{k}$ (in degrees) to $\vec{\omega}=0.01\hat{i}+0.013\hat{j}+0.01\hat{k}$ was found to be 106.7667 mins (1.186 orbits).
-	
+	\noindent\includegraphics[width=\linewidth,height=190pt]{./images/wVt}
+	\includegraphics[width=\linewidth,height=190pt]{./images/currentVt}
+	\includegraphics[width=\linewidth,height=190pt]{./images/torqVt}
 	
 	
 \end{document}
