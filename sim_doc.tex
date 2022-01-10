@@ -88,5 +88,29 @@
 	\includegraphics[width=\linewidth,height=190pt]{./images/currentVt}
 	\includegraphics[width=\linewidth,height=190pt]{./images/torqVt}
 	
+	\pagebreak
+	\hspace{120pt}\underline{\Huge APPENDIX - A}\\
+	
+	\vspace{30pt}\noindent$$
+	\left.
+	\begin{array}{lll}
+		\rho = \sqrt{x^2+y^2+z^2}\\
+		\theta_E = \cos^{-1}\left(\frac{z}{\rho}\right)\\
+		\psi_E = \tan^{-1}\left(\frac{y}{x}\right)\\
+	\end{array}
+	 \right \} \text{Cartesian to spherical coordinate conversion} \hspace{60pt}\text{(1)}
+	$$	
+	\vspace{25pt}\noindent$$
+	\left.
+	\begin{array}{lll}
+		\lambda_{LAT} = 90-\theta_E\frac{180}{\pi}\\
+		\lambda_{LON} = \psi_E\frac{180}{\pi}\\
+		h = \rho-R_E\\
+	\end{array}
+	\right \} \text{Latitude, Longitude and height} \hspace{120pt}\text{(2)}
+	$$
+	\vspace{20pt}\noindent$$
+	v = \sqrt{\mu\left(\frac{2}{r}-\frac{1}{a}\right)}\hspace{15pt}\text{Vis-viva equation, NB: for the simulation }r\approx a \hspace{55pt}\text{(3)}
+	$$
 	
 \end{document}
