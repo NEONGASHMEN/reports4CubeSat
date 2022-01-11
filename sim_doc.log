@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.1.2)  10 JAN 2022 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.1.2)  11 JAN 2022 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,18 +461,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-[5] (./sim_doc.aux)
+
+Overfull \hbox (59.47664pt too wide) detected at line 146
+[] []
+ []
+
+
+Overfull \hbox (10.70677pt too wide) detected at line 152
+\OML/cmm/m/it/10.95 X[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 S:X[] \OT1/cmr
+/m/n/10.95 + [] \OML/cmm/m/it/10.95 X[] ; \OT1/cmr/m/n/10.95 0 \OML/cmm/m/it/10
+.95 < S < \OT1/cmr/m/n/10.95 1[] []
+ []
+
+[5] [6] (./sim_doc.aux)
 Package rerunfilecheck Info: File `sim_doc.out' has not changed.
 (rerunfilecheck)             Checksum: 7973C761962B997140A75AB4CFD1F851;227.
  ) 
 Here is how much of TeX's memory you used:
- 6591 strings out of 481252
- 99123 string characters out of 5915889
- 415236 words of memory out of 5000000
+ 6592 strings out of 481252
+ 99129 string characters out of 5915889
+ 426236 words of memory out of 5000000
  23418 multiletter control sequences out of 15000+600000
  410306 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,8n,74p,1101b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,9n,74p,1102b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/neongashmen/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm10
 95.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
@@ -487,10 +499,10 @@ fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 
-Output written on sim_doc.pdf (6 pages, 232804 bytes).
+Output written on sim_doc.pdf (7 pages, 241631 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
  40 words of extra memory for PDF output out of 10000 (max. 10000000)
 
