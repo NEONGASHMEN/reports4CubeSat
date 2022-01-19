@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.1.2)  11 JAN 2022 10:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.1.12)  19 JAN 2022 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -233,8 +233,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (./titlesec.sty
-Package: titlesec 2021/07/05 v2.14 Sectioning titles
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box49
 \beforetitleunit=\skip53
 \aftertitleunit=\skip54
@@ -265,30 +266,53 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \Gin@req@height=\dimen165
 \Gin@req@width=\dimen166
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen167
+\captionmargin@=\dimen168
+\captionwidth=\dimen169
+\caption@tempdima=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count277
+\c@continuedfloat=\count278
+Package caption Info: hyperref package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count279
+\c@subtable=\count280
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count277
+\l__color_backend_stack_int=\count281
 \l__pdf_internal_box=\box50
 )
 (./sim_doc.aux)
 \openout1 = `sim_doc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -324,7 +348,7 @@ LaTeX Font Info:    ... okay on input line 11.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 12.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -334,11 +358,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count278
+\c@section@level=\count282
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
 
 (./sim_doc.out) (./sim_doc.out)
 \@outlinefile=\write3
@@ -347,16 +371,16 @@ LaTeX Info: Redefining \nameref on input line 11.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
-\scratchdimen=\dimen167
+\scratchcounter=\count283
+\scratchdimen=\dimen174
 \scratchbox=\box51
-\nofMPsegments=\count280
-\nofMParguments=\count281
+\nofMPsegments=\count284
+\nofMParguments=\count285
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count282
-\MPscratchDim=\dimen168
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen175
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -367,17 +391,50 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./intro.tex
 Chapter 1.
+) (./cubesatsim.texpdfTeX warning (ext4): destination with the same identifier 
+(name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Cubesat simulation} [1
 
-Overfull \hbox (5.57758pt too wide) in paragraph at lines 31--31
-|\OT1/cmr/bx/n/24.88 1. De-vel-op-ment of de-tum-bling pro-
+]
+Chapter 2.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 5.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+[2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
@@ -387,104 +444,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.54 	T
-       he first step in our workflow was to define an arbitary earth centere...
-[1
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
 [3]
-<./images/wVt.png, id=46, 526.96875pt x 395.22656pt>
+<./images/wVt.png, id=67, 526.96875pt x 395.22656pt>
 File: ./images/wVt.png Graphic file (type png)
 <use ./images/wVt.png>
-Package pdftex.def Info: ./images/wVt.png  used on input line 87.
-(pdftex.def)             Requested size: 411.95866pt x 190.00209pt.
-<./images/currentVt.png, id=47, 526.96875pt x 395.22656pt>
+Package pdftex.def Info: ./images/wVt.png  used on input line 55.
+(pdftex.def)             Requested size: 289.09393pt x 130.08745pt.
+<./images/currentVt.png, id=68, 526.96875pt x 395.22656pt>
 File: ./images/currentVt.png Graphic file (type png)
 <use ./images/currentVt.png>
-Package pdftex.def Info: ./images/currentVt.png  used on input line 88.
-(pdftex.def)             Requested size: 411.95866pt x 190.00209pt.
-<./images/torqVt.png, id=48, 526.96875pt x 395.22656pt>
+Package pdftex.def Info: ./images/currentVt.png  used on input line 62.
+(pdftex.def)             Requested size: 185.37456pt x 115.63194pt.
+<./images/torqVt.png, id=69, 526.96875pt x 395.22656pt>
 File: ./images/torqVt.png Graphic file (type png)
 <use ./images/torqVt.png>
-Package pdftex.def Info: ./images/torqVt.png  used on input line 89.
-(pdftex.def)             Requested size: 411.95866pt x 190.00209pt.
- [4 <./images/wVt.png (PNG copy)> <./images/currentVt.png (PNG copy)> <./images
-/torqVt.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Package pdftex.def Info: ./images/torqVt.png  used on input line 68.
+(pdftex.def)             Requested size: 185.37456pt x 115.63194pt.
+) [4 <./images/wVt.png (PNG copy)> <./images/currentVt.png (PNG copy)> <./image
+s/torqVt.png (PNG copy)>] (./equations.tex [5]
+Chapter 3.
 
- []
-
-
-Overfull \hbox (59.47664pt too wide) detected at line 146
+Overfull \hbox (41.83495pt too wide) detected at line 60
 [] []
  []
 
+[6
 
-Overfull \hbox (10.70677pt too wide) detected at line 152
-\OML/cmm/m/it/10.95 X[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 S:X[] \OT1/cmr
-/m/n/10.95 + [] \OML/cmm/m/it/10.95 X[] ; \OT1/cmr/m/n/10.95 0 \OML/cmm/m/it/10
-.95 < S < \OT1/cmr/m/n/10.95 1[] []
- []
-
-[5] [6] (./sim_doc.aux)
+]) [7] (./sim_doc.aux)
 Package rerunfilecheck Info: File `sim_doc.out' has not changed.
-(rerunfilecheck)             Checksum: 7973C761962B997140A75AB4CFD1F851;227.
+(rerunfilecheck)             Checksum: D123322348377743D64C261CB0F3561C;341.
  ) 
 Here is how much of TeX's memory you used:
- 6592 strings out of 481252
- 99129 string characters out of 5915889
- 426236 words of memory out of 5000000
- 23418 multiletter control sequences out of 15000+600000
- 410306 words of font info for 51 fonts, out of 8000000 for 9000
+ 7903 strings out of 481252
+ 124423 string characters out of 5915888
+ 445681 words of memory out of 5000000
+ 24699 multiletter control sequences out of 15000+600000
+ 410008 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,9n,74p,1102b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,9n,74p,1152b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/neongashmen/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm10
 95.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
@@ -492,17 +503,16 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-
-Output written on sim_doc.pdf (7 pages, 241631 bytes).
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb>
+Output written on sim_doc.pdf (8 pages, 235491 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 40 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
