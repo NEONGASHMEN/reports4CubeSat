@@ -8,52 +8,12 @@ Effective detumbling can be done by energising the torquer rods in such a fashio
 
 \vspace{25pt}
 
-\begin{tikzpicture}
-
- 
- 
-% Control
-\node [draw,
-    minimum width=2cm,
-    minimum height=1.2cm,
-]  (control) {Control [B.dot]};
- 
-% Torquer
-\node [draw,minimum width=2cm,scope)
-minimum height = 1.2cm,right=1.5cm of control] (torquer) {Magnetorquer *3};
- 
-% Filter block
-\node [draw,
- 
-    minimum width=2cm, 
-    minimum height=1.2cm, 
-    below right= 1cm and 0.25cm of control]  (filter) {Filter};
-    
-\node[draw,
-    circle,
-    minimum size=1.6cm,right=1.5cm of torquer
-] (cubesat){Cubesat};
-
-\draw[-stealth] (control.east) -- (torquer.west)
-    node[midway,above]{$[I_1 I_2 I_3]$};
- 
-\draw[-stealth] (torquer.east) -- (cubesat.west) 
-    node[midway,above]{};
-    
-\draw[-stealth] (cubesat.east) -- ++ (1.25,0) 
-    node[midway](output){}node[midway,above]{};
- 
-\draw[-stealth] (output.east) |- (filter.east);
-    node[midway](output){}node[midway,above]{$$};
- 
-\draw (control.west) -- ++(-3,0) 
-    node[midway,above]{Command};
-
-\draw[-stealth] (filter.west) - | (control.south);
- 
- 
- 
-\end{tikzpicture}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=4in,height=1.8in]{./images/flowChart}
+	\caption{Detumbling system}
+	\label{fig-flow-chart}
+\end{figure}
  
  \vspace{25pt}
  
