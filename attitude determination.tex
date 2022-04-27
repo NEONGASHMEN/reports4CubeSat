@@ -1,0 +1,35 @@
+\chapter{Attitude Determination}
+
+This is the process of computing the relative orientation of the satellite (body frame) with respect to an inertial reference frame(Earth centred Inertial reference frame).This is  done by analysing the position of celestial entities like sun  star constellations. Attitude determination can be computed using several algorithms -among this ,TRIAD method is the most common and easiest algorithm.
+
+\vspace{5pt} 
+
+For the proposed cubesat design we use sun sensors as well as magnetometers.
+From the sun sensor, we get the direction vector of the sun with respect to the body frame of cubesat ($\hat{S_B}$). And from the magnetorquer we get direction vector of the earth’s magnetic field with respect to the body frame of the cubesat($\hat{\mu_B}$)
+
+\vspace{5pt}
+
+The relative position of the sun and the direction vector of the magnetic field with respect to the Earth centred Inertial frame is known to us a($\hat{S_B} \& \hat{\mu_B}$) using geographical models like the IGRF model.
+
+\vspace{5pt}
+
+The body vectors are related to the inertial vectors as follows
+$$ \hat{S_B} = [BN]\hat{S_B} $$
+$$ \hat{\mu_B} = [BN]\hat{\mu_B} $$
+
+\vspace{15pt}
+
+[BN] is the transformation matrix that needs to be computed which relates the body frame with the inertial frame. The TRIAD method uses a third frame ($\hat{t_1},\hat{t_2},\hat{t_3}$)
+
+where $$t_{1B} = \hat{S_B}$$
+$$  t_{1N} = \hat{S_N}$$
+$$\hat{t_{2B}} = \frac{\hat{S_B}\times\hat{\mu_B}}{|\hat{S_B}\times\hat{\mu_B}|}$$
+$$\hat{t_{2N}} = \frac{\hat{S_N}\times\hat{\mu_N}}{|\hat{S_N}\times\hat{\mu_N}|}$$
+
+ $$\hat{t_{3B}} = \hat{t_{1B}} \times \hat{t_{2B}}$$
+ $$\hat{t_{3N}} = \hat{t_{1N}} \times \hat{t_{2N}}$$
+ $$[BT] = [\hat{t_{1B}} \hat{t_{2B}} \hat{t_{3B}} ]$$
+ $$[NT] = [\hat{t_{1N}} \hat{t_{2N}} \hat{t_{3N}} ]$$
+ 
+ $$[BN] = [BN][NT]^T$$
+[BN] is the required transformation matrix for conversion between inertial frame to body frame.
